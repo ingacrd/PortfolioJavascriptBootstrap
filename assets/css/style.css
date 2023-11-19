@@ -11870,6 +11870,12 @@ textarea.form-control-lg {
   right: 5px;
 }
 
+@media (max-width: 575.98px) {
+  .btn-main {
+    display: none;
+  }
+}
+
 .btn-rounded {
   position: relative;
   padding: 0.9375rem 4.4375rem 0.937rem 1.2rem;
@@ -11877,11 +11883,6 @@ textarea.form-control-lg {
   margin: 0;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
-}
-@media (max-width: 575.98px) {
-  .btn-rounded {
-    display: none;
-  }
 }
 .btn-rounded span, .btn-rounded button {
   position: absolute;
@@ -11914,6 +11915,14 @@ textarea.form-control-lg {
 }
 .btn-rounded:hover span {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 575.98px) {
+  .btn-change-color {
+    margin-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .display-2 {
@@ -12039,6 +12048,14 @@ textarea.form-control-lg {
   animation: 5s linear infinite wave;
   transition: transform 10s ease-in-out 0ms;
   box-shadow: 15px 15px 10px #0d6efd;
+}
+@media (max-width: 575.98px) {
+  .circular-img {
+    position: relative;
+    margin-bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 @keyframes wave {

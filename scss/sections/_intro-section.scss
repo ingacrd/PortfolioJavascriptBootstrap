@@ -52,6 +52,13 @@
     animation: 5s linear infinite wave;
     transition: transform 10s ease-in-out 0ms;
     box-shadow: 15px 15px 10px $primary;
+
+    @include media-breakpoint-down(sm) {
+        position: relative;
+        margin-bottom: 5px;
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
 
 @keyframes wave {
