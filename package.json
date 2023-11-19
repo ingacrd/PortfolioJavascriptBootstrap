@@ -1,0 +1,28 @@
+{
+  "name": "boostrap-sass",
+  "version": "1.0.0",
+  "description": "learn bootstrap v5 and sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Carolina Ruiz",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0-alpha3",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0"
+  }
+}

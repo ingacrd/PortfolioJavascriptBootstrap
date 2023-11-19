@@ -1,0 +1,114 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.services {
+    position: relative;
+    padding: 1rem 0;
+    
+    &__content {
+        padding: 1rem;
+        margin-top: 0;
+    p{
+        font-size: 0.8rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1rem;
+        }
+    }
+        @include media-breakpoint-up(lg) {
+            margin-top: 5rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            color:$primary;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    &__pic {
+        max-width: 100%;
+         
+    }
+
+    .skills .icons {
+        height: 80%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+
+    }
+    .skills div div {
+        display: inline-block;
+    }
+
+    .icon-square {
+        @include gradient;
+        position: relative;
+        width: 200px;
+        height: 100px;
+        //background: white;
+        border-radius: 20px;
+        margin: 50px 20px;
+        //box-shadow: 10px 10px 15px $primary;
+        box-shadow: inset 0 0 40px black;
+        transition: all 0.7s ease-out;
+    }
+        .custom-background-green {
+            @include gradientGreen;
+            // background: linear-gradient(to right, rgba($green, 0.95), rgba($cyan, 0.95));
+        }
+    
+        .custom-background-indigo {
+            @include gradientIndigo;
+            // background: linear-gradient(to right, rgba($red, 0.95), rgba($orange, 0.95));
+        }
+        
+                .icon-square:hover {
+                    transform: scale(1.2) rotate(5deg);
+                    transition: all 0.7s ease-out;
+        
+                }
+        
+                .icon-square div {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: -50px;
+                    text-align: center;
+                }
+        
+                .icon-square p {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    bottom: 0;
+                    margin: auto;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 20px;
+        
+                }
+        
+                .icon-square .fa-brands {
+                    font-size: 80px;
+                }
+                .fa-brands {
+                    color: $black;
+                }
+                .fa-solid {
+                    font-size: 80px;
+                }
+                .iconb {
+                    height: 80px;
+                }
+                                
+}

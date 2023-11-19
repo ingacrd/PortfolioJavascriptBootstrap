@@ -1,0 +1,31 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+// #menu.custom-background {
+//     background: linear-gradient(to right, rgba($color, 0.95), rgba(#151414, 0.95));
+//     /* Add any other styles you want to apply when the class is present */
+// }
+.menu {
+    
+    @include gradient;
+
+    li {
+        padding: 0 0.7rem;
+
+        a{
+            color: white !important;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+}
+// .custom-background-green {
+//     //@include gradientGreen;
+//     background: linear-gradient(to right, rgba($green, 0.95), rgba($cyan, 0.95));
+// }
+
+// .custom-background-red {
+//     // @include gradientRed;
+//     background: linear-gradient(to right, rgba($red, 0.95), rgba($orange, 0.95));
+// }
+
